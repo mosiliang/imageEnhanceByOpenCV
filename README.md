@@ -1,7 +1,8 @@
 # imageEnhanceByOpenCV
 Includes several means to enhance images by OpenCV.
 
-x86 debug
+## x86 debug
+
 Choose one means and choose a file folder includes images.
 Waiting for several time, do not push button in a short time.
 Program will create a new folder and create enhanced images in it.
