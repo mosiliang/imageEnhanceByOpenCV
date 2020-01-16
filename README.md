@@ -20,6 +20,8 @@ bilateral filter : protect edges and remove noise.
 ↓
 convolves an image with kernel : enhance contrast.
 
+
+
 # Plan
 ## 1 |  transform histogram by adaptive threshold
 ## 2 |	controllable parameters by users
