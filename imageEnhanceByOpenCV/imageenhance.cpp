@@ -108,7 +108,8 @@ bool imageEnhance::doImageEnhance(int means)
 					if (SharpenMedian == means)
 					{
 						newImg = opencv.bilateral(newImg);
-						newImg = opencv.enhanceContrast(newImg);
+						newImg = opencv.laplacianSharpen(newImg);
+						newImg = opencv.medianFilter(newImg);
 						imwrite(newFilePath.toStdString(), newImg);
 					}
 					else if (Contrast == means)
