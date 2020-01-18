@@ -130,6 +130,10 @@
     <IncludePath>$(ProjectDir);$(SolutionDir)opencv\include;$(SolutionDir)opencv\include\opencv;$(SolutionDir)opencv\include\opencv2;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)opencv\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir);$(SolutionDir)opencv\include;$(SolutionDir)opencv\include\opencv;$(SolutionDir)opencv\include\opencv2;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)opencv\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;$(QTDIR)\include;release;\include;$(QTDIR)\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
